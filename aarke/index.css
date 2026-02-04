@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #000;
+}
+
+.logo {
+    filter: invert(100%);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo {
+    height: 2rem;
+}
+
+.nav {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav-icon i {
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://aarke.com/cdn/shop/files/CMMB_FP_Launch_HeroBanner_2880x1500_ce2c47ee-570b-4815-964d-88fe5b0580d8_2600x.jpg?v=1760604242');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #fff;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.btn {
+    background: #fff;
+    color: #000;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+
+.most-popular {
+    padding: 6rem 3rem;
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 4rem;
+    letter-spacing: -0.02em;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+    max-width: 90rem;
+}
+
+.product-card {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #ebebeb;
+    color: #000;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.product-info {
+    padding: 0 0.5rem;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.product-description {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.engineering-section {
+    background: #f8f8f8;
+    padding: 2rem 3rem;
+}
+
+.engineering-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 90rem;
+    margin: 0 auto 4rem;
+}
+
+.engineering-item {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.engineering-label {
+    position: absolute;
+    bottom: 2rem;
+    left: 85%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 11vw;
+    text-align: center;
+}
+
+.engineering-content {
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.engineering-content h2 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.engineering-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.read-more {
+    color: #000;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    .engineering-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .most-popular,
+    .engineering-section {
+        padding: 4rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+        .footer {
+            background: #000;
+            color: #fff;
+            padding: 4rem 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 90rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            height: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-newsletter p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #ccc;
+        }
+
+        .email-form {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .email-input {
+            width: 100%;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 1rem 3rem 1rem 1rem;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .email-input::placeholder {
+            color: #999;
+        }
+
+        .email-submit {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .privacy-text {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .privacy-text a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer-column h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-column ul li a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .payment-icon {
+            height: 2rem;
+            padding: 0.3rem 0.5rem;
+            background: #fff;
+            border-radius: 0.2rem;
+        }
+
+        .footer-copyright {
+            text-align: center;
+            color: #999;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+
+        .country-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .country-flag {
+            width: 1.5rem;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .payment-methods {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }

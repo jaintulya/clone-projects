@@ -1,0 +1,1341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-banner {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+header {
+    background-color: #000000;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 10vh;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    filter: brightness(0) invert(1);
+    width: 2rem;
+    height: auto;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu li a {
+    color: white;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ff6b6b;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+    margin-right: 1.25rem;
+}
+
+.search-box input {
+    padding: 0.5rem 2rem 0.5rem 0.625rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    width: 9.375rem;
+}
+
+.search-box i {
+    position: absolute;
+    right: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.user-icons {
+    display: flex;
+}
+
+.user-icons i {
+    margin-left: 0.9375rem;
+    font-size: 1.125rem;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu-btn {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/0230797503dc9c47d3c8126a99ac4c76831182f0?_a=BAMAK+eA0');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    min-height: 31.25rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: right;
+    margin-left: auto;
+    width: 50%;
+    padding-right: 5vw;
+}
+
+.hero-content h2 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-bottom: 0.625rem;
+    letter-spacing: 0.0625rem;
+}
+
+.hero-content h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.875rem;
+    line-height: 1.2;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 0.9375rem;
+    justify-content: flex-end;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    padding: 0.75rem 1.5625rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border: 0.125rem solid white;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.future-section {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2560/cms/images/7ba1ac154f2bc577656c42bab314d676d4189d3d?_a=BAMAK+eA0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.future-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.future-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.future-content h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    letter-spacing: 0.125rem;
+}
+
+.future-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+}
+
+.future-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.future-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.125rem solid white;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.future-btn:hover {
+    background-color: white;
+    color: #000;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+    padding: 2rem;
+    transition: left 0.3s ease;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 1.5rem;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    
+    .nav-menu, .header-icons {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero {
+        height: 60vh;
+        min-height: 25rem;
+    }
+    
+    .hero-content {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 12.5rem;
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
+    
+    .future-section {
+        height: 60vh;
+        min-height: 25rem;
+    }
+    
+    .future-content h2 {
+        font-size: 2rem;
+    }
+    
+    .future-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .future-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .future-btn {
+        width: 12.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+    
+    .future-section {
+        height: 50vh;
+    }
+    
+    .future-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .future-content h3 {
+        font-size: 1rem;
+    }
+}
+.fastr-section {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/941dc924870f118d90b1fa1571e7fac8c7415a20?_a=BAMAK+eA0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fastr-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.fastr-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.fastr-content h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    letter-spacing: 0.125rem;
+}
+
+.fastr-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+}
+
+.fastr-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.fastr-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.125rem solid white;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.fastr-btn:hover {
+    background-color: white;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .fastr-section {
+        height: 60vh;
+        min-height: 25rem;
+    }
+    
+    .fastr-content h2 {
+        font-size: 2rem;
+    }
+    
+    .fastr-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .fastr-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .fastr-btn {
+        width: 12.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .fastr-section {
+        height: 50vh;
+    }
+    
+    .fastr-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .fastr-content h3 {
+        font-size: 1rem;
+    }
+}
+#trendingnow{
+text-align: center;
+padding-top: 10vh;
+padding-bottom: 10vh;
+}
+.palermo-section {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2560/cms/images/b9b22a4f42381a2196d5efff14af2a3415b270f8?_a=BAMAMieA0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.palermo-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.palermo-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: left;
+    padding-left: 5vw;
+}
+
+.palermo-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.palermo-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+.palermo-btn {
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.125rem solid white;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.palermo-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .palermo-section {
+        height: 60vh;
+        min-height: 25rem;
+    }
+    
+    .palermo-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .palermo-content p {
+        font-size: 1.2rem;
+    }
+    
+    .gowild-section {
+        height: 70vh;
+        min-height: 30rem;
+    }
+    
+    .gowild-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .gowild-content h2,
+    .gowild-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .gowild-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .gowild-btn {
+        width: 12.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .palermo-section {
+        height: 50vh;
+    }
+    
+    .palermo-content h1 {
+        font-size: 2rem;
+    }
+    
+    .palermo-content p {
+        font-size: 1rem;
+    }
+    
+    .gowild-section {
+        height: 60vh;
+    }
+    
+    .gowild-content h1 {
+        font-size: 2rem;
+    }
+    
+    .gowild-content h2,
+    .gowild-content h3 {
+        font-size: 1.2rem;
+    }
+} */
+.motorsport-section {
+    padding: 3rem 0;
+}
+
+.motorsport-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.motorsport-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.motorsport-card img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    text-align: left;
+}
+
+.card-text h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.card-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .motorsport-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .motorsport-card img {
+        height: 20rem;
+    }
+    
+    .card-text {
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    .card-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .motorsport-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .motorsport-card img {
+        height: 18rem;
+    }
+    
+    .card-text {
+        bottom: 1rem;
+        left: 1rem;
+    }
+    
+    .card-text h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card-text p {
+        font-size: 0.85rem;
+    }
+}
+.gowild-section {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/ca11d03a54db76fbd116f5dc799f7887e27f8c78?_a=BAMAK+eA0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.gowild-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.gowild-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.gowild-content h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.gowild-content h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.gowild-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.gowild-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.gowild-btn {
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.125rem solid white;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    min-width: 12rem;
+}
+
+.gowild-btn.outline {
+    background-color: transparent;
+    color: white;
+}
+
+.gowild-btn:hover {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+.gowild-btn.outline:hover {
+    background-color: white;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .gowild-section {
+        height: 60vh;
+        min-height: 25rem;
+    }
+    
+    .gowild-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .gowild-content h2,
+    .gowild-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .gowild-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .gowild-btn {
+        width: 12.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gowild-section {
+        height: 50vh;
+    }
+    
+    .gowild-content h1 {
+        font-size: 2rem;
+    }
+    
+    .gowild-content h2,
+    .gowild-content h3 {
+        font-size: 1.2rem;
+    }
+}
+.collab-section {
+    padding: 3rem 0;
+}
+
+.collab-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.collab-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.collab-card img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    display: block;
+}
+
+.collab-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    text-align: left;
+}
+
+.collab-text h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .collab-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .collab-card img {
+        height: 20rem;
+    }
+    
+    .collab-text {
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    .collab-text h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .collab-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .collab-card img {
+        height: 18rem;
+    }
+    
+    .collab-text {
+        bottom: 1rem;
+        left: 1rem;
+    }
+    
+    .collab-text h3 {
+        font-size: 1.2rem;
+    }
+}
+.jersey-section {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/b4bf981a811156620f3de4255ae9b45b09dc9f5b?_a=BAMAK+eA0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.jersey-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.jersey-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.jersey-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.jersey-content p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.jersey-btn {
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.125rem solid white;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.jersey-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .jersey-section {
+        height: 60vh;
+        min-height: 25rem;
+    }
+    
+
+    
+    .jersey-content h2 {
+        font-size: 2rem;
+    }
+    
+    .jersey-content p {
+        font-size: 1rem;
+        max-width: 25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .jersey-section {
+        height: 50vh;
+    }
+    
+
+    
+    .jersey-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .jersey-content p {
+        font-size: 0.9rem;
+        max-width: 20rem;
+    }
+    
+    .jersey-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+.asap-section {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/fc555bf3b864f89ef00785391ecf2d9f877c13f2?_a=BAMAK+eA0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.asap-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.asap-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.asap-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.asap-content p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+.asap-btn {
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.125rem solid white;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.asap-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .asap-section {
+        height: 60vh;
+        min-height: 25rem;
+    }
+    
+    .asap-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .asap-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .asap-section {
+        height: 50vh;
+    }
+    
+    .asap-content h1 {
+        font-size: 2rem;
+    }
+    
+    .asap-content p {
+        font-size: 1rem;
+    }
+    
+    .asap-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+.trending-container {
+    padding: 1.25rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.9375rem;
+}
+
+.shoe-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.shoe-item {
+    width: 23%;
+    text-align: center;
+    background: #fff;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.shoe-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3125rem;
+}
+
+.discount {
+    position: absolute;
+    top: 0.625rem;
+    left: 0.625rem;
+    background: #d32f2f;
+    color: #fff;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.1875rem;
+    font-size: 0.875rem;
+}
+
+.shoe-name {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.625rem 0;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.price s {
+    color: #999;
+    margin-right: 0.3125rem;
+}
+
+.price span {
+    color: #888;
+    font-size: 0.75rem;
+}
+
+.price b {
+    color: #d32f2f;
+    font-weight: normal;
+}
+
+@media (max-width: 64rem) {
+    .shoe-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 48rem) {
+    .shoe-item {
+        width: 100%;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 15rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #d3d3d3;
+}
+
+.social-links, .explore-links {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.social-links a, .explore-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.social-links a:hover, .explore-links a:hover {
+    color: #d3d3d3;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    margin: 1.5rem auto 0;
+    padding: 0 1.25rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.payment-text {
+    font-size: 0.875rem;
+}
+
+.location {
+    font-size: 0.875rem;
+}
+
+.footer-bottom p {
+    font-size: 0.75rem;
+    color: #d3d3d3;
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 64rem) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-links, .explore-links {
+        justify-content: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 48rem) {
+    h3 {
+        font-size: 1rem;
+    }
+    ul li {
+        font-size: 0.8125rem;
+    }
+    .social-links a, .explore-links a, .payment-text, .location {
+        font-size: 0.8125rem;
+    }
+}
